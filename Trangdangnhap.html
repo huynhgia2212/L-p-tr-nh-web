@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+   
+    <link rel="stylesheet" type="text/css" href="Trangdangnhap.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Nhập Trái Cây OGANI</title>
+
+ 
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            O<span class="leaves">🍃</span>GANI
+        </div>
+        <ul class="toolbar">
+            <li><button class="login" onclick="window.location.href='http://127.0.0.1:5500/Blog_traicay.html'">Đăng Nhập</button></li>
+            <li><a href="#">Trang Chủ</a></li>
+            <li><a href="#">Giới Thiệu</a></li>
+            <li><a href="#">Sản Phẩm</a></li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Liên Hệ</a></li>
+            <!-- Thêm các liên kết khác tại đây -->
+        </ul>
+    </div>
+
+            <!-- Thêm đăng nhập -->
+    <div class="container">
+            <h2>Đăng Nhập</h2>
+                <form action="process-login.php" method="post">
+                    <label for="username">Tài Khoản:</label>
+                    <input type="text" id="username" name="username" required>
+        
+                    <label for="password">Mật Khẩu:</label>
+                    <input type="password" id="password" name="password" required>
+        
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Ghi Nhớ</label>
+        
+                    <input type="submit" value="Đăng Nhập">
+                </form>
+    </div>
+
+        <!-- Thêm chân trang-->
+    <footer>
+        <div class="header">
+            <div class="logo">
+              O<span class="leaves">🍃</span>GANI
+            </div>
+            <div class="boxfooter2">
+                <h4><i class="fas fa-list"></i> Danh Mục</h4> <!-- Thêm icon vào đây -->
+                <div class="add mrb10"><i class="fas fa-chevron-right"></i>Trang Chủ</div>
+                <div class="add mrb10"><i class="fas fa-chevron-right"></i>Sản Phẩm</div>
+                <div class="add mrb10"><i class="fas fa-chevron-right"></i>Giới Thiệu</div>
+                <div class="add mrb10"><i class="fas fa-chevron-right"></i>Liên Hệ</div>
+            </div>
+            <div class="boxfooter3">
+                <h4><i class="fas fa-user"></i></i> Chăm Sóc Khách Hàng</h4> <!-- Thêm icon vào đây -->
+                <div class="add mrb10"><i class="fas fa-search"></i> Tìm kiếm</div>
+                <div class="add mrb10"><i class="fas fa-cart-plus"></i> Đặt Hàng</div>
+                <div class="add mrb10"><i class="fas fa-credit-card"></i> Thanh Toán</div>
+                <div class="add mrb10"><i class="fas fa-receipt"></i> Chính Sách</div>
+                <div class="add mrb10"><i class="fas fa-globe"></i> Bảo Mật</div>
+            </div>
+            <div class="boxfooter3">
+                <h4><i class="fas fa-info-circle"></i> Thông Tin Liên Hệ</h4> <!-- Thêm icon vào đây -->
+                <div class="add mrb10"><i class="fas fa-map-marker-alt"></i> Địa chỉ: 123 Đường ABC, Quận 1, TP.HCM</div>
+                <div class="add mrb10"><i class="fas fa-envelope"></i> Email: contact@congtycuaban.com</div>
+                <div class="add mrb10"><i class="fas fa-phone"></i> Điện thoại: (012) 345-6789.</div>
+            </div>
+        </div>
+        <div class=" textcenter colorc">
+            Bản quyền © 2024 bởi Công ty HTVC
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
