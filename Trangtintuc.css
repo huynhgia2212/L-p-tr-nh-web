@@ -1,9 +1,4 @@
 
-
-.box{
-  background-image: url(bg/hình\ trái\ cây.jpg);
-  background-repeat: repeat; 
-}
   /* Đây là : css phần đầu*/
   body {
     font-family: 'Arial', sans-serif;
@@ -14,7 +9,6 @@
   }
   
   .header {
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -113,77 +107,76 @@
 
 
 
-    
-  /* Container table đăng nhập*/
-  .container {
 
-    max-width: 400px;
-    margin: 50px auto;
+    /*Phần canh lề phần body   */
+section {
     padding: 20px;
-    border: 4px solid #0e0e0ed2;
-    border-radius: 2px;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  .TTK{
-    background-color: blue;
-    color: white;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
 
-    border: none;
-    cursor: pointer;
-  }
-  
-  input[type="text"],
-  input[type="password"],
-  input[type="submit"] {
-    width: 100%;
+.article {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.article h2 {
+    margin-top: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+nav {
+    background-color: #7FFF00;
+    color: #8B0000;
     padding: 10px;
-    margin: 5px 0;
-    display: inline-block;
-    border: 2px solid #0f0e0e;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  input[type="checkbox"] {
-    margin-top: 10px;
-  }
-  
-  input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover {
-    background-color: #45a049;
-  }
-  
+    text-align: center;
+}
 
- /* đây là nhần css footer */
-  .row {
-      clear: both;
-      width: 100%;
-      margin-bottom: 20px;
-      display: flex;
-      /* Sử dụng flexbox để các cột tự động sắp xếp */
-  }
+nav a {
+    color: #8B0000;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #00FF00;
+    color: #8B0000;
+    padding: 20px;
+    text-align: center;
+}
+/* footer */
   
-  .boxfooter1,
-  .boxfooter2,
-  .boxfooter3 {
-      width: 33.33%;
-      /* Sử dụng 1/3 của chiều rộng của phần footer */
-      padding: 0 10px;
-      /* Thêm padding để tạo khoảng cách giữa các cột */
-      box-sizing: border-box;
-      /* Đảm bảo padding và border không làm thay đổi kích thước */
-      color: #ccc;
-      text-align: left;
-      /* Căn giữa nội dung của các cột */
-  }
- 
-  
+.row {
+    clear: both;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    /* Sử dụng flexbox để các cột tự động sắp xếp */
+}
+
+.boxfooter1,
+.boxfooter2,
+.boxfooter3 {
+    width: 33.33%;
+    /* Sử dụng 1/3 của chiều rộng của phần footer */
+    padding: 0 10px;
+    /* Thêm padding để tạo khoảng cách giữa các cột */
+    box-sizing: border-box;
+    /* Đảm bảo padding và border không làm thay đổi kích thước */
+    color: #ccc;
+    text-align: left;
+    /* Căn giữa nội dung của các cột */
+}
+
 .logo-container {
   border: 5px solid rgb(11, 174, 30);
   border-radius: 100%; /* Tạo hình tròn */
@@ -205,43 +198,43 @@
   line-height: 1; /* Cân chỉnh dòng chữ đứng giữa */
   overflow: hidden; /* Ẩn phần chữ vượt ra ngoài khung hình tròn */
 }
-  .leaves {
-    font-size: 24px; /* Điều chỉnh kích thước lá */
+.leaves {
+  font-size: 24px; /* Điều chỉnh kích thước lá */
+}
+footer {
+    width: 100%;
+    background-color: #333;
+    min-height: 150px;
+    padding-top: 20px;
+    /* Thêm padding ở đỉnh footer */
+    box-sizing: border-box;
+    /* Đảm bảo padding và border không làm thay đổi kích thước */
+    text-align: center;
+    /* Căn giữa nội dung của footer */
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.colorc {
+    color: #ccc;
+}
+
+.mrb10 {
+    margin-bottom: 10px;
+}
+
+/* PHẦN CSS CỦA đăng nhập */
+.login{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block ;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
   }
-  footer {
-      width: 100%;
-      background-color: #333;
-      min-height: 150px;
-      padding-top: 20px;
-      /* Thêm padding ở đỉnh footer */
-      box-sizing: border-box;
-      /* Đảm bảo padding và border không làm thay đổi kích thước */
-      text-align: center;
-      /* Căn giữa nội dung của footer */
-  }
-  
-  .textcenter {
-      text-align: center;
-  }
-  
-  .colorc {
-      color: #ccc;
-  }
-  
-  .mrb10 {
-      margin-bottom: 10px;
-  }
-  
-  /* PHẦN CSS CỦA đăng nhập */
-  .login{
-      background-color: #4CAF50;
-      border: 2px;
-      color: white;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block ;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 10px;
-    }

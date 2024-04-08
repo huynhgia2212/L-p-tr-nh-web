@@ -1,0 +1,299 @@
+  /* Đây là : css phần đầu*/
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+  }
+  
+  .header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    animation: bounce 2s infinite;
+  }
+  
+  .logo .leaves {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+    color: green;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(-15px);}
+  }
+  
+  .toolbar {
+    list-style: none;
+    display: flex;
+  }
+  
+  .toolbar li {
+    padding: 0 5px;
+  }
+  
+  .toolbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .toolbar a:hover {
+    color: #f2f2f2;
+  }
+
+  .content {
+      text-align: center;
+      margin: 20px;
+    }
+    
+    .product {
+      border: 1px solid #ddd;
+      padding: 10px;
+      width: calc(33.333% - 20px); /* Chia đều chiều rộng cho 3 sản phẩm, trừ đi khoảng cách */
+      margin: 10px; /* Khoảng cách giữa các sản phẩm */
+      display: inline-block; /* Hiển thị các sản phẩm trên cùng một hàng */
+      vertical-align: top; /* Đảm bảo các sản phẩm cùng đường baseline */
+    }
+    
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+    
+    .product-info {
+      margin-top: 10px;
+    }
+    
+    .product-title {
+      font-size: 24px;
+      color: #333;
+    }
+    
+    .product-price {
+      font-size: 20px;
+      color: green;
+    }
+    
+    .add-to-cart {
+      background-color: #008cba;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    
+    .add-to-cart:hover {
+      background-color: #005f73;
+    }
+   
+/* phần body */
+/* .header_mq{
+    background-color: var(--mau-nen); 
+    color: white; 
+    height: 40px;
+    padding-bottom: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.header{
+    height: 120px;
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    cursor:pointer; 
+    box-sizing: border-box;
+
+}
+.header_a{
+    list-style: none;
+    display: inline-block;
+    margin-right: 70px;
+    cursor:pointer; 
+    top: 0cqw;
+    box-sizing: border-box;
+}
+.header_page{
+    justify-content: center; 
+    align-content: center; 
+    width:100%;
+    margin-left: 365px;
+    box-sizing: border-box;
+}
+ */
+
+
+.fa-shopping-cart:before{
+   font-size: 30px;
+}
+.fa-home::before{
+    font-size: 25px;
+}
+.fa-search::before{
+    font-size: 20px;
+}
+.header_logo{
+    width: 200px; /* Đặt chiều rộng của khối div */
+    height: 150px;
+    margin-left:300px ;
+    box-sizing: border-box;
+    
+}
+.header_logo img{
+    width: 200px; /* Đặt chiều rộng của ảnh */
+    height: 200px; /* Đảm bảo tỷ lệ khung hình được giữ nguyên */
+}
+.icon{
+    font-size: 10px;
+}
+.content_title{
+    
+    color: #076430;;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.title,.fa-circle,.fa-circle-o{
+    display:inline;
+}
+.fa-circle::before{
+    font-size: 20px;
+}
+.slogan h2{
+    font-size: 300%;
+    color: #076430;;
+}
+.content_body{
+    margin-left:  100px;
+    margin-right: 100px;
+    font-size:large;
+    size: 0cap;
+    
+}
+.body_img{
+    margin-left: 300px;
+    width: 700px;
+    height: auto;
+    border-radius: 5px;
+    
+}
+.footer{
+    background-color: var(--mau-nen);
+    padding-left: 300px solid var(--mau-nen);
+    height: 400px;
+    color: white;   
+}
+.footer_info,.footer_info1,.footer_info2{
+    display: flex;
+    display:inline-block;
+    height: 100px;
+    font-size: 120%;
+}
+.title_footer{
+    padding-top: 20px;
+    font-size: 110%;
+    margin-left: 100px;
+}
+.footer_info{
+    margin-left: 100px;
+}
+
+.footer_info1{
+    margin-left: 150px;
+    margin-top: 30px;
+    height: 10px;
+    
+}
+.footer_info2{
+    margin-left: 200px;
+}
+
+
+ /* đây là nhần css footer */
+ .row {
+    clear: both;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    /* Sử dụng flexbox để các cột tự động sắp xếp */
+}
+
+.boxfooter1,
+.boxfooter2,
+.boxfooter3 {
+    width: 33.33%;
+    /* Sử dụng 1/3 của chiều rộng của phần footer */
+    padding: 0 10px;
+    /* Thêm padding để tạo khoảng cách giữa các cột */
+    box-sizing: border-box;
+    /* Đảm bảo padding và border không làm thay đổi kích thước */
+    color: #ccc;
+    text-align: left;
+    /* Căn giữa nội dung của các cột */
+}
+
+
+.logo-container {
+border: 5px solid rgb(11, 174, 30);
+border-radius: 100%; /* Tạo hình tròn */
+width: 200px; /* Điều chỉnh kích thước khung hình tròn */
+height: 200px; /* Điều chỉnh kích thước khung hình tròn */
+display: flex;
+align-items: center;
+justify-content: center;
+line-height: 1; /* Cân chỉnh dòng chữ đứng giữa */
+overflow: hidden; /* Ẩn phần chữ vượt ra ngoài khung hình tròn */
+background-color: rgb(201, 236, 48); 
+}
+
+.text-inside {
+color: black; /* Màu chữ trắng */
+padding: 10px; /* Thêm padding để tạo khoảng cách giữa chữ và viền của hình tròn */
+font-weight: bold; /* Kiểu chữ in đậm */
+font-size: 30px; /* Điều chỉnh kích thước chữ */
+line-height: 1; /* Cân chỉnh dòng chữ đứng giữa */
+overflow: hidden; /* Ẩn phần chữ vượt ra ngoài khung hình tròn */
+}
+.leaves {
+  font-size: 24px; /* Điều chỉnh kích thước lá */
+}
+footer {
+    width: 100%;
+    background-color: #333;
+    min-height: 150px;
+    padding-top: 20px;
+    /* Thêm padding ở đỉnh footer */
+    box-sizing: border-box;
+    /* Đảm bảo padding và border không làm thay đổi kích thước */
+    text-align: center;
+    /* Căn giữa nội dung của footer */
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.colorc {
+    color: #ccc;
+}
+
+.mrb10 {
+    margin-bottom: 10px;
+}
